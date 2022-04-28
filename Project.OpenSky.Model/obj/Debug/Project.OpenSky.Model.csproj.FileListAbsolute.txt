@@ -1,0 +1,6 @@
+C:\Users\User\OneDrive\Moshe Yaso Work\C#Projects\Project.OpenSky\Project.OpenSky.Model\bin\Debug\Project.OpenSky.Model.dll
+C:\Users\User\OneDrive\Moshe Yaso Work\C#Projects\Project.OpenSky\Project.OpenSky.Model\bin\Debug\Project.OpenSky.Model.pdb
+C:\Users\User\OneDrive\Moshe Yaso Work\C#Projects\Project.OpenSky\Project.OpenSky.Model\obj\Debug\Project.OpenSky.Model.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive\Moshe Yaso Work\C#Projects\Project.OpenSky\Project.OpenSky.Model\obj\Debug\Project.OpenSky.Model.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\Moshe Yaso Work\C#Projects\Project.OpenSky\Project.OpenSky.Model\obj\Debug\Project.OpenSky.Model.dll
+C:\Users\User\OneDrive\Moshe Yaso Work\C#Projects\Project.OpenSky\Project.OpenSky.Model\obj\Debug\Project.OpenSky.Model.pdb
