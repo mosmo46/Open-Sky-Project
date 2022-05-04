@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Project.OpenSky.Entities
 {
-    public class Class1
+    public class States
     {
+      //  public List<OpenSkyDetails> _details = new List<OpenSkyDetails>();
     }
 }

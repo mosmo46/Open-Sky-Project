@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project.OpenSky.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,8 +10,18 @@ namespace Project.OpenSky.Model
     public class OpenSkyModel
     {
 
-            public int time { get; set; }
+        public OpenSkyModel(object[][] states)
+        {
+            this.states = states;
+            this.date = DateTime.Now;
+
+        }
+
+
+        public int time { get; set; }
             public object[][] states { get; set; }
+            
+            public DateTime date { get; set; }
 
     }
 }

@@ -84,8 +84,12 @@
       <Project>{e72c053c-20f4-4e0e-8ff8-8fc0733a1cb2}</Project>
       <Name>Project.OpenSky.Dal</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Project.OpenSky.Entities\Project.OpenSky.Entities.csproj">
+      <Project>{319e4ea7-8888-4180-b486-abfbe0729800}</Project>
+      <Name>Project.OpenSky.Entities</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Project.OpenSky.Model\Project.OpenSky.Model.csproj">
-      <Project>{65457FFA-7B5A-4EDF-8404-B33559A78FD1}</Project>
+      <Project>{65457ffa-7b5a-4edf-8404-b33559a78fd1}</Project>
       <Name>Project.OpenSky.Model</Name>
     </ProjectReference>
   </ItemGroup>

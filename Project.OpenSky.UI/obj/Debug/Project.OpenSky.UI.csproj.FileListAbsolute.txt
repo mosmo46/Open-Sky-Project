@@ -34,3 +34,5 @@ C:\Users\User\OneDrive\Moshe Yaso Work\C#Projects\Project.OpenSky\Project.OpenSk
 C:\Users\User\OneDrive\Moshe Yaso Work\C#Projects\Project.OpenSky\Project.OpenSky.UI\obj\Debug\Project.OpenSky.UI.exe.config
 C:\Users\User\OneDrive\Moshe Yaso Work\C#Projects\Project.OpenSky\Project.OpenSky.UI\obj\Debug\Project.OpenSky.UI.Form1.resources
 C:\Users\User\OneDrive\Moshe Yaso Work\C#Projects\Project.OpenSky\Project.OpenSky.UI\obj\Debug\Project.OpenSky.UI.csproj.CopyComplete
+C:\Users\User\OneDrive\Moshe Yaso Work\C#Projects\Project.OpenSky\Project.OpenSky.UI\bin\Debug\Project.OpenSky.Entities.dll
+C:\Users\User\OneDrive\Moshe Yaso Work\C#Projects\Project.OpenSky\Project.OpenSky.UI\bin\Debug\Project.OpenSky.Entities.pdb
