@@ -14,14 +14,12 @@ namespace Project.OpenSky.Entities
         public void Run()
         {
             httpJob.AutoRequset();
-            httpJob.HandlerDataArrived += queueTask1.AddNewData;  
+            httpJob.HandlerDataArrived += listTask1.AddNewData;  
 
-         //   httpJob.HandlerNumberArrived += queueTask2.AddNewItem;
-           // httpJob.HandlerNumberArrived += queueTask3.AddNewItem;
         }
 
         public OpenSkyEntities httpJob = new OpenSkyEntities();
-        public QueueTask queueTask1 = new QueueTask();
+        public ListTask listTask1 = new ListTask();
 
     }
 }

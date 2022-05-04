@@ -30,7 +30,7 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.listViewCuntrysNames = new System.Windows.Forms.ListView();
             this.NumberOfFlightsLable = new System.Windows.Forms.Label();
             this.NumberOfFlightsLableConterLable = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -58,14 +58,14 @@
             this.button2.Text = "Stop";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // listView1
+            // listViewCuntrysNames
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(29, 218);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(194, 220);
-            this.listView1.TabIndex = 2;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listViewCuntrysNames.HideSelection = false;
+            this.listViewCuntrysNames.Location = new System.Drawing.Point(29, 218);
+            this.listViewCuntrysNames.Name = "listViewCuntrysNames";
+            this.listViewCuntrysNames.Size = new System.Drawing.Size(194, 220);
+            this.listViewCuntrysNames.TabIndex = 2;
+            this.listViewCuntrysNames.UseCompatibleStateImageBehavior = false;
             // 
             // NumberOfFlightsLable
             // 
@@ -117,7 +117,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.NumberOfFlightsLableConterLable);
             this.Controls.Add(this.NumberOfFlightsLable);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.listViewCuntrysNames);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
@@ -131,7 +131,7 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView listViewCuntrysNames;
         private System.Windows.Forms.Label NumberOfFlightsLable;
         private System.Windows.Forms.Label NumberOfFlightsLableConterLable;
         private System.Windows.Forms.Label label1;

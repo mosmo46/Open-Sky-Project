@@ -31,7 +31,6 @@ namespace Project.OpenSky.UI
         {
             manager.Run();
             manager.httpJob.HandlerUpdateData += HttpHandlerUpdate;
-            // UpdateControls();
         }
 
 
@@ -41,28 +40,28 @@ namespace Project.OpenSky.UI
         }
 
 
-        public int displayDataFlightLength()
+        public int displayNumberOfFlights()
         {
-            int sum = 0;
-            var lengthList = manager.queueTask1.list;
+            int flightsArrayLength = 0;
+            var data = manager.listTask1.list;
 
            
 
-            for (int i = 0; i < lengthList.Count; i++)
+            for (int i = 0; i < data.Count; i++)
             {
-                sum = lengthList[i].states.Length;
+                flightsArrayLength = data[i].states.Length;
             }
-            return sum;
+            return flightsArrayLength;
 
         }
 
         public void HttpHandlerUpdate(OpenSkyModel openSky)
         {
-            if (label2.InvokeRequired)
+            if (NumberOfFlightsLableConterLable.InvokeRequired)
             {
-                label2.Invoke(new Action(() =>
+                NumberOfFlightsLableConterLable.Invoke(new Action(() =>
                 {
-                    NumberOfFlightsLableConterLable.Text = displayDataFlightLength().ToString();
+                    NumberOfFlightsLableConterLable.Text = displayNumberOfFlights().ToString();
                     NumberOfFlightsLableConterLable.Visible = true;
 
                 }));
@@ -70,33 +69,33 @@ namespace Project.OpenSky.UI
             }
             else
             {
-                label2.Text = displayDataFlightLength().ToString();
+                NumberOfFlightsLableConterLable.Text = displayNumberOfFlights().ToString();
                 NumberOfFlightsLableConterLable.Visible = true;
 
             }
-            if (listView1.InvokeRequired)
+            if (listViewCuntrysNames.InvokeRequired)
             {
-                listView1.Invoke(new Action(() =>
+                listViewCuntrysNames.Invoke(new Action(() =>
                 {
-                    listView1.Clear();
-                    listView1.View = View.Details;
-                    listView1.Columns.Add("List");
+                    listViewCuntrysNames.Clear();
+                    listViewCuntrysNames.View = View.Details;
+                    listViewCuntrysNames.Columns.Add("List");
                     var listname = DispalyNameCuntryList();
                     for (int i = 0; i < listname.Count; i++)
                     {
-                        listView1.Items.Add(new ListViewItem(new string[] { listname[i].ToString() }));
+                        listViewCuntrysNames.Items.Add(new ListViewItem(new string[] { listname[i].ToString() }));
                     }
                 }));
             }
             else
             {
                 var listname = DispalyNameCuntryList();
-                listView1.Clear();
-                listView1.View = View.Details;
-                listView1.Columns.Add("List");
+                listViewCuntrysNames.Clear();
+                listViewCuntrysNames.View = View.Details;
+                listViewCuntrysNames.Columns.Add("List");
                 for (int i = 0; i < listname.Count; i++)
                 {
-                    listView1.Items.Add(new ListViewItem(new string[] { listname[i].ToString() }));
+                    listViewCuntrysNames.Items.Add(new ListViewItem(new string[] { listname[i].ToString() }));
                 }
             }
 
@@ -138,7 +137,7 @@ namespace Project.OpenSky.UI
         {
             List<string> Countrys = new List<string>();
 
-            var GetDataFromHttp = manager.queueTask1.list;
+            var GetDataFromHttp = manager.listTask1.list;
 
             for (int i = 0; i < GetDataFromHttp.Count; i++)
             {

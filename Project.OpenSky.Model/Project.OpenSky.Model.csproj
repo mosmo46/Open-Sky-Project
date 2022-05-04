@@ -42,7 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="OpenSkyModel.cs" />
-    <Compile Include="States.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />

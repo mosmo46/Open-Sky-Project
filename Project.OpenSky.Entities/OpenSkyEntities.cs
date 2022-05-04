@@ -24,12 +24,12 @@ namespace Project.OpenSky.Entities
         public event delItem HandlerDataArrived;
 
 
-        public async Task<object[][]> GetAllFlit()
+        public async Task<object[][]> GetFlightsData()
         {
             HTTP hTTP = new HTTP();
-            OpenSkyModel opne = await hTTP.GetAllData();
-            object[][] arrayOfArtay = opne.states;
-            return arrayOfArtay;
+            OpenSkyModel openSkyModel = await hTTP.GetAllData();
+            object[][] flightsData = openSkyModel.states;
+            return flightsData;
         }
 
 
@@ -40,13 +40,13 @@ namespace Project.OpenSky.Entities
             {
                 while (runing)
                 {
-                    object[][] statesData = await GetAllFlit();
+                    object[][] flightsData = await GetFlightsData();
 
-                    OpenSkyModel openSkyModel = new OpenSkyModel(statesData);
+                    OpenSkyModel newData = new OpenSkyModel(flightsData);
 
-                    HandlerDataArrived(openSkyModel);
+                    HandlerDataArrived(newData);
 
-                    HandlerUpdateData(openSkyModel);
+                    HandlerUpdateData(newData);
 
                     Thread.Sleep(20000);
                 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Project.OpenSky.Entities
 {
-    public class QueueTask
+    public class ListTask
     {
         public List<OpenSkyModel> list = new List<OpenSkyModel>();
 

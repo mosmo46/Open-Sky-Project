@@ -37,41 +37,5 @@ namespace Project.OpenSky.Dal
         }
 
     }
-    //readonly string dataToFile = $@"C:\Users\User\OneDrive\Moshe Yaso Work\C#Projects\Project.OpenSky\Project.OpenSky.UI\bin\Debug\{Guid.NewGuid()}-data.txt";
-    /*
-    public async Task<OpenSkyModel> GetAllData()
-    {
-        OpenSkyModel flightsData;
-        using (var client = new HttpClient())
-        {
-            client.BaseAddress = new Uri("https://opensky-network.org/");
-
-            client.DefaultRequestHeaders.Accept.Clear();
-
-            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-
-            HttpResponseMessage pespones = await client.GetAsync(@"api/states/all");
-
-            string lines = await pespones.Content.ReadAsStringAsync();
-
-            flightsData = JsonSerializer.Deserialize<OpenSkyModel>(lines);
-
-            return flightsData;
-
-        }
-
-    }
-     */
-
-
-
-    /*
-    public void SaveToFile(OpenSkyModel data)
-    {
-        string res = JsonSerializer.Serialize(data);
-
-     //   File.WriteAllText(dataToFile, res);
-    }
-     */
-
+  
 }
